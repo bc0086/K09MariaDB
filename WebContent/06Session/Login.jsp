@@ -26,7 +26,7 @@ if(session.getAttribute("USER_ID")==null){
 	<script>
 	function loginValidate(fn){
 		if(!fn.user_id.value){
-			alert("아이디를 입력하세요");
+			alert("아이디를 입력하세요.");
 			fn.user_id.focus();
 			return false;
 		}
