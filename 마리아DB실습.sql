@@ -2,7 +2,7 @@
 	블럭단위 주석
 */
 #라인단위 주석1
---라인단위 주석2
+-- member라인단위 주석2
 
 SELECT * FROM ts_test;
 
@@ -41,7 +41,7 @@ ALTER TABLE board ADD constraint fk_board_member
 	FOREIGN KEY (id) REFERENCES member (id);
 
 #더미데이터 삽입	
-INSERT INTO member (id, pass, NAME) VALUES ('kosmo', '1234', '코스모 61기');
+INSERT INTO member (id, pass, NAME) VALUES ('kosmo', '1234', '코스모 61기');member
 # member테이블과 외래키 제약조건이 있으므로 board테이블에 먼저 삽입할 경우
 # 에러가 발생된다.
 INSERT INTO board (title, content, id)
